@@ -17,7 +17,8 @@
             <h1>JavaScripts Event KeyCode</h1>
         </div>
         <div>
-            <img class="GitHub" src="public/icon/image 1.svg" alt="github logo">
+            <a href="https://github.com/mostafa-kheibary"><img class="GitHub" src="public/icon/image 1.svg"
+                    alt="github logo"></a>
         </div>
     </div>
     <!-- ----- header ----- -->
@@ -27,31 +28,36 @@
             <div class="box">
                 <span class="line green"></span>
                 <h6>Event Key</h6>
-                <h4>Space Bar</h4>
+                <h4 id="EKey">0</h4>
             </div>
             <div class="box">
                 <span class="line yellow"></span>
                 <h6>Event Location</h6>
-                <h4>0</h4>
+                <h4 id="ELocation">0</h4>
             </div>
             <div class="box">
                 <span class="line red"></span>
                 <h6>Event Which</h6>
-                <h4>Space Bar</h4>
+                <h4 id="Ewhich">0</h4>
             </div>
             <div class="box">
                 <span class="line purple"></span>
                 <h6>Event Code</h6>
-                <h4>ControlLeft</h4>
+                <h4 id="Ecode">Nothing</h4>
             </div>
         </div>
         <!-- ----- right section ----- -->
         <div class="keybourd">
-            <h2>69</h2>
-            <p>Press any key to get the JavaScript event keycode</p>
-            <button>SHOW IN TABLE FORMAT</button>
+            <div>
+                <h2 id="key"></h2>
+                <p>Press any key to get the JavaScript event keycode</p>
+                <!-- <button>SHOW IN TABLE FORMAT</button> -->
+            </div>
+
         </div>
     </div>
+
+    <script src="public/js/app.js"></script>
 </body>
 
 </html>

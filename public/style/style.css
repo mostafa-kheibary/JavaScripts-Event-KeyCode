@@ -1,5 +1,6 @@
 /* ---------- google font ROBOTO ---------- */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root{
     --green : #7BFF98;
     --red : #FF837B;
@@ -76,9 +77,9 @@ body{
 }
  .box h4{
     margin-top: 5px;
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: 5px;
-    font-size: 20px;
+    font-size: 25px;
 }
 .box .line{
     position: absolute;
@@ -103,8 +104,11 @@ body{
 
 /* ---------- start right section ---------- */
 .keybourd{
-    margin-top: -80px;
-    margin-right: 250px;
+    width: 100%;
+    height: 100%;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 .keybourd h2{
@@ -125,4 +129,35 @@ body{
     cursor: pointer;
     border-radius: 5px;
     font-weight: 100;
+}
+/* ---------- end of right section ---------- */
+
+/* ---------- media qury---------- */
+@media only screen and (max-width: 980px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .keybourd{
+        margin-top: -70px;
+        width: 100%;
+    }
+    .information{
+        margin-top: 40px;
+        margin-bottom: 25px;
+        place-items: center;
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media only screen and (max-width: 850px){
+    .container{
+        margin-inline: 25px;
+    }
+}
+@media only screen and (max-width: 700px){
+    .information{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
