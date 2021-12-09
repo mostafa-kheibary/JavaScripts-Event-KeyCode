@@ -15,7 +15,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-/* ---------- start header style ---------- */
+/* ---------- start header ---------- */
 .head{
     margin: 10px 25px 10px 25px;
 }
@@ -37,4 +37,92 @@ body{
 .GitHub{
     cursor: pointer;
 }
-/* ---------- end of header style ---------- */
+/* ---------- end of header ---------- */
+
+/* ---------- start left section ---------- */
+.container{
+    display: flex;
+    justify-content:space-between;
+    place-items: center;
+    margin-inline: 100px;
+    margin-top: 100px;
+}
+.information{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 40px;
+}
+.box{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    place-items:center ;
+    width: 300px;
+    height: 100px;
+    box-shadow: 0px 0px 42px rgba(0, 0, 0, 0.137);
+    border-radius: 8px;
+    transition: all 400ms ease-out;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+.box h6{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-weight: 100;
+    font-size: 12px;
+}
+ .box h4{
+    margin-top: 5px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.box .line{
+    position: absolute;
+    width: 5px;
+    height:70px;
+    left: 7px;
+    border-radius: 50px;
+}
+.box .green{
+    background-color: var(--green);
+}
+.box .red{
+    background-color: var(--red);
+}
+.box .yellow{
+    background-color: var(--yellow);
+}
+.box .purple{
+    background-color: var(--purple);
+}
+/* ---------- end of left section ---------- */
+
+/* ---------- start right section ---------- */
+.keybourd{
+    margin-top: -80px;
+    margin-right: 250px;
+    text-align: center;
+}
+.keybourd h2{
+    font-size: 250px;
+    font-weight: 400;   
+}
+.keybourd p{
+    font-weight: 100;
+    font-size: 20px;
+}
+.keybourd button{
+    all: unset  ;
+    margin-top: 20px;
+    width: 200px;
+    padding: 10px;
+    background-color: var(--red);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 100;
+}
