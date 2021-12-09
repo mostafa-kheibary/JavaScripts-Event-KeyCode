@@ -1,0 +1,40 @@
+/* ---------- google font ROBOTO ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,100&display=swap');
+:root{
+    --green : #7BFF98;
+    --red : #FF837B;
+    --yellow : #FFF27B;
+    --purple : #AD7BFF;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ---------- start header style ---------- */
+.head{
+    margin: 10px 25px 10px 25px;
+}
+.head,.head .title{
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+.head .title{
+    gap: 15px;
+}
+.head .title h1{
+    font-weight: 300;
+    font-size: 20px;
+}
+.head img{
+    width: 40px;
+}
+.GitHub{
+    cursor: pointer;
+}
+/* ---------- end of header style ---------- */
